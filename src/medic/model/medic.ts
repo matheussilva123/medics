@@ -18,11 +18,11 @@ export class Medic {
     @Column({name: 'email', length: 100})
     email: string;
 
-    @Column({name: 'endereco', length: 255})
-    endereco: string;
-
     @Column({name: 'estado', length: 2})
     estado: string;
+
+    @Column({name: 'endereco', length: 255})
+    endereco: string;
         
     @Column({name: 'crm', length: 20})
     crm: string;
@@ -30,13 +30,13 @@ export class Medic {
     @Column({name: 'data_incricao'})
     data_incricao: Date;
 
+    @Column({name: 'primeira_incricao'})
+    primeira_incricao: Date;
+
     @Column({name: 'situacao', length: 20})
     situacao: string;
 
     @Column({name: 'especialidade', length: 50})
     especialidade: string;
-
-    @Column({name: 'primeira_incricao'})
-    primeira_incricao: Date;
 
 }
