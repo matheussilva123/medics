@@ -12,6 +12,6 @@ export class MedicService {
       ) {}
   
       async create(medicDTO: MedicDTO): Promise<void> {
-        await this.medicRepository.save(medicDTO);
+        await this.medicRepository.save(Medic.fromDTO(medicDTO));
       }
 }

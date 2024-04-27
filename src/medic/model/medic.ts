@@ -1,9 +1,13 @@
 import { Column, Entity, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm";
+import { MedicDTO } from "../dto/medic.dto";
 
 @Entity({name: "medics"})
 export class Medic {
 
-    @PrimaryColumn({name: 'crmuf', length: 30}) // talvez um id?
+    @PrimaryGeneratedColumn()
+    id: string;
+
+    @Column({name: 'crmuf', length: 30}) // talvez um id?
     crmuf: string;
 
     @Column({name: 'nome', length: 40})
@@ -27,16 +31,34 @@ export class Medic {
     @Column({name: 'crm', length: 20})
     crm: string;
     
-    @Column({name: 'data_incricao'})
-    data_incricao: Date;
+    @Column({name: 'data_inscricao'})
+    data_inscricao: Date;
 
-    @Column({name: 'primeira_incricao'})
-    primeira_incricao: Date;
+    @Column({name: 'primeira_inscricao'})
+    primeira_inscricao: Date;
 
     @Column({name: 'situacao', length: 20})
     situacao: string;
 
     @Column({name: 'especialidade', length: 50})
     especialidade: string;
+
+
+    static fromDTO(medicDTO: MedicDTO): Medic {
+        const medic = new Medic();
+        medic.crmuf = medicDTO.crmuf;
+        medic.nome = medicDTO.nome;
+        medic.cpf = medicDTO.cpf;
+        medic.telefone = medicDTO.telefone;
+        medic.email = medicDTO.email;
+        medic.estado = medicDTO.estado;
+        medic.endereco = medicDTO.endereco;
+        medic.crm = medicDTO.crm;
+        medic.data_inscricao = medicDTO.data_inscricao;
+        medic.primeira_inscricao = medicDTO.primeira_inscricao;
+        medic.situacao = medicDTO.situacao;
+        medic.especialidade = medicDTO.especialidade;
+        return medic;
+    }
 
 }

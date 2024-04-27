@@ -7,8 +7,8 @@ export class MedicDTO {
     readonly endereco: string;
     readonly estado: string;
     readonly crm: string;
-    readonly data_incricao: Date;
+    readonly data_inscricao: Date;
     readonly situacao: string;
     readonly especialidade: string;
-    readonly primeira_incricao: Date;
+    readonly primeira_inscricao: Date;
 }
