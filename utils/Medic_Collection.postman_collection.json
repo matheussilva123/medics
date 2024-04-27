@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "0785bf0d-a8ce-4025-b6d4-b4f60d24f880",
+		"name": "Medic Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10221409"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"crmuf\": \"SP\",\n  \"nome\": \"Dr. João Silva\",\n  \"cpf\": \"12345678900\",\n  \"telefone\": \"111234-5678\",\n  \"email\": \"joao.silva@example.com\",\n  \"endereco\": \"Rua Exemplo, 123\",\n  \"estado\": \"São Paulo\",\n  \"crm\": \"1234567-SP\",\n  \"data_incricao\": \"2023-01-15T00:00:00.000Z\",\n  \"situacao\": \"Ativo\",\n  \"especialidade\": \"Cardiologia\",\n  \"primeira_incricao\": \"2023-01-15T00:00:00.000Z\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/medics",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"medics"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

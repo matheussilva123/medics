@@ -24,4 +24,4 @@ $ npm run start
 ## Postman
 You can find the endpoint collection here and import directly into postman.
 
-[Node Tropa Users](/utils/...)
+[Node Tropa Users](/utils/Medic_Collection.postman_collection.json)
