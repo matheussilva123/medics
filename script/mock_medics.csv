@@ -1,0 +1,3 @@
+crmuf,nome,cpf,telefone,email,endereco,estado,crm,data_inscricao,situacao,especialidade,primeira_inscricao
+1234562SP,Dr. João Silva,12345678900,111234-5678,joao.silva@example.com,"Rua Exemplo, 123",SP,1234567,2024-03-01,Ativo,Cardiologia,2024-03-01 00:00:00
+9876543RJ,Dra. Maria Souza,98765432100,212345-6789,maria.souza@example.com,"Av. Teste, 456",RJ,9876543,2024-02-14,Ativo,Pediatria,2024-02-14 21:00:00

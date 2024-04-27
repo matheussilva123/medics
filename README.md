@@ -1,5 +1,5 @@
-# medics
-medics
+# medics-api
+
 
 ## What does it do?
 Nothing yet!
@@ -21,6 +21,7 @@ $ npm install
 $ docker-compose up
 $ npm run start
 ```
+
 ## Postman
 You can find the endpoint collection here and import directly into postman.
 
